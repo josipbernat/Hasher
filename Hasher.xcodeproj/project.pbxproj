@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE9F1FC51B610F720071FC51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FC41B610F720071FC51 /* AppDelegate.swift */; };
+		BE9F1FC71B610F720071FC51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F1FC61B610F720071FC51 /* Images.xcassets */; };
+		BE9F1FCA1B610F720071FC51 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE9F1FC81B610F720071FC51 /* MainMenu.xib */; };
+		BE9F1FD61B610F720071FC51 /* HasherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FD51B610F720071FC51 /* HasherTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE9F1FD01B610F720071FC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE9F1FB71B610F720071FC51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE9F1FBE1B610F720071FC51;
+			remoteInfo = Hasher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE9F1FBF1B610F720071FC51 /* Hasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9F1FC31B610F720071FC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE9F1FC41B610F720071FC51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE9F1FC61B610F720071FC51 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE9F1FC91B610F720071FC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BE9F1FCF1B610F720071FC51 /* HasherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HasherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9F1FD41B610F720071FC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE9F1FD51B610F720071FC51 /* HasherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasherTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE9F1FBC1B610F720071FC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9F1FCC1B610F720071FC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE9F1FB61B610F720071FC51 = {
+			isa = PBXGroup;
+			children = (
+				BE9F1FC11B610F720071FC51 /* Hasher */,
+				BE9F1FD21B610F720071FC51 /* HasherTests */,
+				BE9F1FC01B610F720071FC51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE9F1FC01B610F720071FC51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE9F1FBF1B610F720071FC51 /* Hasher.app */,
+				BE9F1FCF1B610F720071FC51 /* HasherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE9F1FC11B610F720071FC51 /* Hasher */ = {
+			isa = PBXGroup;
+			children = (
+				BE9F1FC41B610F720071FC51 /* AppDelegate.swift */,
+				BE9F1FC61B610F720071FC51 /* Images.xcassets */,
+				BE9F1FC81B610F720071FC51 /* MainMenu.xib */,
+				BE9F1FC21B610F720071FC51 /* Supporting Files */,
+			);
+			path = Hasher;
+			sourceTree = "<group>";
+		};
+		BE9F1FC21B610F720071FC51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE9F1FC31B610F720071FC51 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE9F1FD21B610F720071FC51 /* HasherTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE9F1FD51B610F720071FC51 /* HasherTests.swift */,
+				BE9F1FD31B610F720071FC51 /* Supporting Files */,
+			);
+			path = HasherTests;
+			sourceTree = "<group>";
+		};
+		BE9F1FD31B610F720071FC51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE9F1FD41B610F720071FC51 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE9F1FBE1B610F720071FC51 /* Hasher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9F1FD91B610F720071FC51 /* Build configuration list for PBXNativeTarget "Hasher" */;
+			buildPhases = (
+				BE9F1FBB1B610F720071FC51 /* Sources */,
+				BE9F1FBC1B610F720071FC51 /* Frameworks */,
+				BE9F1FBD1B610F720071FC51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hasher;
+			productName = Hasher;
+			productReference = BE9F1FBF1B610F720071FC51 /* Hasher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE9F1FCE1B610F720071FC51 /* HasherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9F1FDC1B610F720071FC51 /* Build configuration list for PBXNativeTarget "HasherTests" */;
+			buildPhases = (
+				BE9F1FCB1B610F720071FC51 /* Sources */,
+				BE9F1FCC1B610F720071FC51 /* Frameworks */,
+				BE9F1FCD1B610F720071FC51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE9F1FD11B610F720071FC51 /* PBXTargetDependency */,
+			);
+			name = HasherTests;
+			productName = HasherTests;
+			productReference = BE9F1FCF1B610F720071FC51 /* HasherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE9F1FB71B610F720071FC51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Josip Bernat";
+				TargetAttributes = {
+					BE9F1FBE1B610F720071FC51 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BE9F1FCE1B610F720071FC51 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BE9F1FBE1B610F720071FC51;
+					};
+				};
+			};
+			buildConfigurationList = BE9F1FBA1B610F720071FC51 /* Build configuration list for PBXProject "Hasher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE9F1FB61B610F720071FC51;
+			productRefGroup = BE9F1FC01B610F720071FC51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE9F1FBE1B610F720071FC51 /* Hasher */,
+				BE9F1FCE1B610F720071FC51 /* HasherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE9F1FBD1B610F720071FC51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9F1FC71B610F720071FC51 /* Images.xcassets in Resources */,
+				BE9F1FCA1B610F720071FC51 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9F1FCD1B610F720071FC51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE9F1FBB1B610F720071FC51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9F1FC51B610F720071FC51 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9F1FCB1B610F720071FC51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9F1FD61B610F720071FC51 /* HasherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE9F1FD11B610F720071FC51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE9F1FBE1B610F720071FC51 /* Hasher */;
+			targetProxy = BE9F1FD01B610F720071FC51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE9F1FC81B610F720071FC51 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE9F1FC91B610F720071FC51 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE9F1FD71B610F720071FC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE9F1FD81B610F720071FC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BE9F1FDA1B610F720071FC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Hasher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE9F1FDB1B610F720071FC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Hasher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE9F1FDD1B610F720071FC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HasherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hasher.app/Contents/MacOS/Hasher";
+			};
+			name = Debug;
+		};
+		BE9F1FDE1B610F720071FC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HasherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hasher.app/Contents/MacOS/Hasher";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE9F1FBA1B610F720071FC51 /* Build configuration list for PBXProject "Hasher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9F1FD71B610F720071FC51 /* Debug */,
+				BE9F1FD81B610F720071FC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9F1FD91B610F720071FC51 /* Build configuration list for PBXNativeTarget "Hasher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9F1FDA1B610F720071FC51 /* Debug */,
+				BE9F1FDB1B610F720071FC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE9F1FDC1B610F720071FC51 /* Build configuration list for PBXNativeTarget "HasherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9F1FDD1B610F720071FC51 /* Debug */,
+				BE9F1FDE1B610F720071FC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE9F1FB71B610F720071FC51 /* Project object */;
+}
