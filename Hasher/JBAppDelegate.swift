@@ -9,11 +9,12 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet weak var window: NSWindow!
-
-
+class JBAppDelegate: NSObject, NSApplicationDelegate {
+    
+    var layoutController = JBLayoutController.sharedInstance
+    
+    //MARK: - NSApplicationDelegate
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
     }
