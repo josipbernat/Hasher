@@ -16,6 +16,7 @@
 		BE9F1FF71B6118A00071FC51 /* JBContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE9F1FF31B6118A00071FC51 /* JBContentViewController.xib */; };
 		BE9F1FF81B6118A00071FC51 /* JBLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FF41B6118A00071FC51 /* JBLayoutController.swift */; };
 		BE9F1FFA1B6118BD0071FC51 /* JBDummyControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FF91B6118BD0071FC51 /* JBDummyControll.swift */; };
+		BE9F1FFD1B612DCA0071FC51 /* JBTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FFC1B612DCA0071FC51 /* JBTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		BE9F1FF31B6118A00071FC51 /* JBContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JBContentViewController.xib; sourceTree = "<group>"; };
 		BE9F1FF41B6118A00071FC51 /* JBLayoutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBLayoutController.swift; sourceTree = "<group>"; };
 		BE9F1FF91B6118BD0071FC51 /* JBDummyControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDummyControll.swift; sourceTree = "<group>"; };
+		BE9F1FFC1B612DCA0071FC51 /* JBTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		BE9F1FC11B610F720071FC51 /* Hasher */ = {
 			isa = PBXGroup;
 			children = (
+				BE9F1FFB1B612DBA0071FC51 /* View */,
 				BE9F1FF01B6118A00071FC51 /* Controller */,
 				BE9F1FF51B6118A00071FC51 /* Helpers */,
 				BE9F1FC41B610F720071FC51 /* JBAppDelegate.swift */,
@@ -164,6 +167,14 @@
 				BE9F1FF91B6118BD0071FC51 /* JBDummyControll.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BE9F1FFB1B612DBA0071FC51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE9F1FFC1B612DCA0071FC51 /* JBTextView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +331,7 @@
 				BE9F1FF61B6118A00071FC51 /* JBContentViewController.swift in Sources */,
 				BE9F1FFA1B6118BD0071FC51 /* JBDummyControll.swift in Sources */,
 				BE9F1FC51B610F720071FC51 /* JBAppDelegate.swift in Sources */,
+				BE9F1FFD1B612DCA0071FC51 /* JBTextView.swift in Sources */,
 				BE9F1FF81B6118A00071FC51 /* JBLayoutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
