@@ -15,7 +15,8 @@ class JBContentViewController: NSViewController {
     
     @IBOutlet weak var md5Label: NSTextField!
     @IBOutlet weak var resultLabel: NSTextField!
-
+    @IBOutlet weak var comboBox: NSComboBox!
+    
     //MARK: - Memory Management
     
     deinit {
@@ -34,6 +35,8 @@ class JBContentViewController: NSViewController {
                 strongThis.md5Hash(text)
             }
         }
+        
+        comboBox.selectItemAtIndex(0)
         
         md5Label.stringValue = NSLocalizedString("MD5 hash", comment: "")
         resultLabel.stringValue = ""

@@ -6,6 +6,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="JBContentViewController" customModule="Hasher" customModuleProvider="target">
             <connections>
+                <outlet property="comboBox" destination="wZR-3E-nia" id="liP-rQ-uc6"/>
                 <outlet property="md5Label" destination="uyx-VO-UsN" id="qOQ-pj-PWs"/>
                 <outlet property="resultLabel" destination="ccq-AB-Xok" id="jYc-5g-RC6"/>
                 <outlet property="textView" destination="gi6-X9-47D" id="jC7-nN-F44"/>
@@ -55,32 +56,54 @@
                         <constraint firstAttribute="height" constant="17" id="6i7-ZC-Pk6"/>
                         <constraint firstAttribute="width" constant="63" id="qPw-Oa-VSi"/>
                     </constraints>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MD5 hash" id="jfv-zv-O9y">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Result" id="jfv-zv-O9y">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ccq-AB-Xok" userLabel="Result Label">
-                    <rect key="frame" x="18" y="12" width="304" height="22"/>
+                    <rect key="frame" x="20" y="12" width="300" height="22"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="22" id="Zhn-Qa-PMX"/>
                     </constraints>
-                    <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" state="on" alignment="center" usesSingleLineMode="YES" id="LlP-hD-6LX">
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" state="on" alignment="center" drawsBackground="YES" usesSingleLineMode="YES" id="LlP-hD-6LX">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wZR-3E-nia">
+                    <rect key="frame" x="20" y="38" width="103" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="6r4-Vt-bOU"/>
+                        <constraint firstAttribute="height" constant="20" id="sCJ-Zi-ksx"/>
+                    </constraints>
+                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="ZkO-UI-lP3">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <objectValues>
+                            <string>MD5</string>
+                            <string>SH1</string>
+                            <string>SHA224</string>
+                            <string>SHA256</string>
+                            <string>SHA384</string>
+                            <string>SHA512</string>
+                        </objectValues>
+                    </comboBoxCell>
+                </comboBox>
             </subviews>
             <constraints>
                 <constraint firstItem="uyx-VO-UsN" firstAttribute="top" secondItem="cxW-9a-xXf" secondAttribute="bottom" constant="25" id="3Vu-Oh-voC"/>
                 <constraint firstItem="cxW-9a-xXf" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="5Tb-8u-oPi"/>
                 <constraint firstItem="cxW-9a-xXf" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="80R-bu-v4g"/>
                 <constraint firstAttribute="centerX" secondItem="uyx-VO-UsN" secondAttribute="centerX" id="ACo-yo-doG"/>
+                <constraint firstItem="wZR-3E-nia" firstAttribute="top" secondItem="cxW-9a-xXf" secondAttribute="bottom" constant="22" id="Fzt-FK-sMI"/>
                 <constraint firstAttribute="trailing" secondItem="cxW-9a-xXf" secondAttribute="trailing" constant="20" id="KZf-6J-IW1"/>
                 <constraint firstItem="ccq-AB-Xok" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="N4A-LQ-1kM"/>
                 <constraint firstAttribute="trailing" secondItem="ccq-AB-Xok" secondAttribute="trailing" constant="20" id="NK6-oc-31y"/>
+                <constraint firstItem="wZR-3E-nia" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="hRA-mV-ueo"/>
                 <constraint firstItem="ccq-AB-Xok" firstAttribute="top" secondItem="uyx-VO-UsN" secondAttribute="bottom" constant="8" id="taa-Mc-a68"/>
             </constraints>
             <point key="canvasLocation" x="64" y="400.5"/>
