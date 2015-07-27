@@ -68,17 +68,13 @@ class JBTextView: NSTextView {
         
         NSGraphicsContext.saveGraphicsState()
         
-        if let window = self.window {
+        var hasText = false
+        if let value = self.string {
+            hasText = count(value.utf16) > 0 ? true : false
+        }
         
-            var windowIsResponder = window.firstResponder == self
-            var hasText = false
-            if let value = self.string {
-                hasText = count(value.utf16) > 0 ? true : false
-            }
-            
-            if count(placeholder.utf16) > 0 && windowIsResponder == true && hasText == false {
-                (placeholder as NSString).drawAtPoint(NSMakePoint(6.0, 0.0), withAttributes: attributes)
-            }
+        if count(placeholder.utf16) > 0 && hasText == false {
+            (placeholder as NSString).drawAtPoint(NSMakePoint(6.0, 0.0), withAttributes: attributes)
         }
         
         NSGraphicsContext.restoreGraphicsState()
