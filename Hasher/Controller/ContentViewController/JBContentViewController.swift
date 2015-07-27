@@ -16,6 +16,7 @@ class JBContentViewController: NSViewController {
     @IBOutlet weak var resultLabel: NSTextField!
     @IBOutlet weak var outputTextField: NSTextField!
     @IBOutlet weak var comboBox: NSComboBox!
+    @IBOutlet weak var disclosureButton: NSButton!
     
     enum kHashType : String {
     
@@ -62,6 +63,8 @@ class JBContentViewController: NSViewController {
         
         toogleResultLabelText()
         outputTextField.stringValue = ""
+        
+        disclosureButton.state = 1
     }
     
     //MARK: - ComboBox
@@ -81,6 +84,27 @@ class JBContentViewController: NSViewController {
     
     func toogleResultLabelText() {
         resultLabel.stringValue = String(format: "%@ %@", selectedHash.rawValue, NSLocalizedString("result", comment: ""))
+    }
+    
+    //MARK: - Button Selectors
+    
+    @IBAction func onDisclosure(sender: AnyObject) {
+    
+        var menu = NSMenu(title: "")
+        menu.insertItemWithTitle("About", action: "onAbout:", keyEquivalent: "", atIndex: 0)
+        menu.insertItemWithTitle("Quit", action: "onQuit:", keyEquivalent: "", atIndex: 1)
+        
+        if let event = NSApp.currentEvent {
+            NSMenu.popUpContextMenu(menu, withEvent: event!, forView: sender as! NSView)
+        }
+    }
+    
+    func onAbout(sender: AnyObject) {
+        NSApplication.sharedApplication().orderFrontStandardAboutPanel(self)
+    }
+    
+    func onQuit(sender: AnyObject) {
+        NSApplication.sharedApplication().terminate(self)
     }
     
     //MARK: - Hashing
