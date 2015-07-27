@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "StatusHighlighted.png"
+      "filename" : "StatusItemHighlighted.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "StatusHighlighted@2x.png"
+      "filename" : "StatusItemHighlighted@2x.png"
     },
     {
       "idiom" : "universal",
