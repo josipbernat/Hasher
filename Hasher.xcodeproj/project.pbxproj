@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		120458D4FE6CDB0DFE220D0C /* Pods_Hasher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EEB81D2E2BC8777B41024B /* Pods_Hasher.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BE1E7E011B98649300CBDF51 /* Pods_Hasher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7EEB81D2E2BC8777B41024B /* Pods_Hasher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE9F1FC51B610F720071FC51 /* JBAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FC41B610F720071FC51 /* JBAppDelegate.swift */; };
 		BE9F1FC71B610F720071FC51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F1FC61B610F720071FC51 /* Images.xcassets */; };
 		BE9F1FD61B610F720071FC51 /* HasherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FD51B610F720071FC51 /* HasherTests.swift */; };
@@ -29,10 +30,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BE1E7E021B98649300CBDF51 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE1E7E011B98649300CBDF51 /* Pods_Hasher.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0BA1E9BF5FF33E97CC78ACA4 /* Pods-Hasher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hasher.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hasher/Pods-Hasher.release.xcconfig"; sourceTree = "<group>"; };
 		0F18E4C281C78521F71EA445 /* Pods-Hasher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hasher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hasher/Pods-Hasher.debug.xcconfig"; sourceTree = "<group>"; };
 		A7EEB81D2E2BC8777B41024B /* Pods_Hasher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hasher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1E7DFF1B98647700CBDF51 /* Hasher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Hasher.entitlements; sourceTree = "<group>"; };
 		BE9F1FBF1B610F720071FC51 /* Hasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9F1FC31B610F720071FC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9F1FC41B610F720071FC51 /* JBAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBAppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +123,7 @@
 		BE9F1FC11B610F720071FC51 /* Hasher */ = {
 			isa = PBXGroup;
 			children = (
+				BE1E7DFF1B98647700CBDF51 /* Hasher.entitlements */,
 				BE9F1FFB1B612DBA0071FC51 /* View */,
 				BE9F1FF01B6118A00071FC51 /* Controller */,
 				BE9F1FF51B6118A00071FC51 /* Helpers */,
@@ -190,6 +207,7 @@
 				BE9F1FBD1B610F720071FC51 /* Resources */,
 				37CE13C8856EDDDD48ABA55E /* Embed Pods Frameworks */,
 				733CF19336FA5220305ED9FF /* Copy Pods Resources */,
+				BE1E7E021B98649300CBDF51 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +247,11 @@
 				TargetAttributes = {
 					BE9F1FBE1B610F720071FC51 = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					BE9F1FCE1B610F720071FC51 = {
 						CreatedOnToolsVersion = 6.4;
@@ -440,6 +463,8 @@
 			baseConfigurationReference = 0F18E4C281C78521F71EA445 /* Pods-Hasher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hasher/Hasher.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Hasher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -452,6 +477,8 @@
 			baseConfigurationReference = 0BA1E9BF5FF33E97CC78ACA4 /* Pods-Hasher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hasher/Hasher.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Hasher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
