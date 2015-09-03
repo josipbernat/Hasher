@@ -21,7 +21,7 @@ class JBTextView: NSTextView {
         }
     }
     
-    let attributes = [NSForegroundColorAttributeName: NSColor.blackColor(), NSFontAttributeName: NSFont.systemFontOfSize(15.0)]
+    let placeholderFont = NSFont.systemFontOfSize(15.0)
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -53,6 +53,8 @@ class JBTextView: NSTextView {
     
     override func didChangeText() {
         
+        self.textColor = isDarkTheme() ? NSColor.whiteColor() : NSColor.blackColor()
+        
         self.needsDisplay = true
         super.didChangeText()
         
@@ -62,6 +64,10 @@ class JBTextView: NSTextView {
     }
     
     //MARK: - Drawing
+    
+    func isDarkTheme() -> Bool {
+        return NSAppearance.currentAppearance().name.hasPrefix("NSAppearanceNameVibrantDark")
+    }
     
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
@@ -74,6 +80,10 @@ class JBTextView: NSTextView {
         }
         
         if count(placeholder.utf16) > 0 && hasText == false {
+            
+            let attributes = [NSForegroundColorAttributeName: isDarkTheme() ? NSColor.whiteColor() : NSColor.blackColor(),
+                NSFontAttributeName: placeholderFont]
+            
             (placeholder as NSString).drawAtPoint(NSMakePoint(6.0, 0.0), withAttributes: attributes)
         }
         
