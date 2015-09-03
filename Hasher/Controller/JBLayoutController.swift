@@ -36,7 +36,6 @@ class JBLayoutController: NSObject {
             
             statusButton.image = NSImage(named: "Status")
             statusButton.image?.setTemplate(true)
-//            statusButton.alternateImage = NSImage(named: "StatusHighlighted")
             
             // DummyControl interferes mouseDown events to keep statusButton highlighted while popover is open.
             let dummyControl = JBDummyControll()
