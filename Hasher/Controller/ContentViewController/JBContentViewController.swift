@@ -117,7 +117,6 @@ class JBContentViewController: NSViewController {
         }
    
         outputTextField.stringValue = hashedString(text)
-        print(outputTextField.stringValue)
     }
     
     var selectedHash = kHashType.MD5
