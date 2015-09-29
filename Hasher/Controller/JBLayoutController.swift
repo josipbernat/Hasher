@@ -20,7 +20,7 @@ class JBLayoutController: NSObject {
     
     override init() {
         popover = NSPopover()
-        var controller = JBContentViewController(nibName: "JBContentViewController", bundle: nil)
+        let controller = JBContentViewController(nibName: "JBContentViewController", bundle: nil)
         popover.contentViewController = controller
         statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(24)
         
@@ -35,7 +35,7 @@ class JBLayoutController: NSObject {
         if let statusButton = statusItem.button {
             
             statusButton.image = NSImage(named: "Status")
-            statusButton.image?.setTemplate(true)
+            statusButton.image?.template = true
             
             // DummyControl interferes mouseDown events to keep statusButton highlighted while popover is open.
             let dummyControl = JBDummyControll()
@@ -63,8 +63,8 @@ class JBLayoutController: NSObject {
         if let statusButton = statusItem.button {
             
             statusButton.highlight(true)
-            popover.showRelativeToRect(NSZeroRect, ofView: statusButton, preferredEdge: NSMinYEdge)
-            popoverMonitor = NSEvent.addGlobalMonitorForEventsMatchingMask(.LeftMouseDownMask, handler: { (event: NSEvent!) -> Void in
+            popover.showRelativeToRect(NSZeroRect, ofView: statusButton, preferredEdge: NSRectEdge.MinY)
+            popoverMonitor = NSEvent.addGlobalMonitorForEventsMatchingMask(.LeftMouseDownMask, handler: { (event: NSEvent) -> Void in
                 self.closePopover()
             })
         }

@@ -76,10 +76,10 @@ class JBTextView: NSTextView {
         
         var hasText = false
         if let value = self.string {
-            hasText = count(value.utf16) > 0 ? true : false
+            hasText = value.utf16.count > 0 ? true : false
         }
         
-        if count(placeholder.utf16) > 0 && hasText == false {
+        if placeholder.utf16.count > 0 && hasText == false {
             
             let attributes = [NSForegroundColorAttributeName: isDarkTheme() ? NSColor.whiteColor() : NSColor.blackColor(),
                 NSFontAttributeName: placeholderFont]

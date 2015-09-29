@@ -90,12 +90,12 @@ class JBContentViewController: NSViewController {
     
     @IBAction func onDisclosure(sender: AnyObject) {
     
-        var menu = NSMenu(title: "")
+        let menu = NSMenu(title: "")
         menu.insertItemWithTitle("About", action: "onAbout:", keyEquivalent: "", atIndex: 0)
         menu.insertItemWithTitle("Quit", action: "onQuit:", keyEquivalent: "", atIndex: 1)
         
         if let event = NSApp.currentEvent {
-            NSMenu.popUpContextMenu(menu, withEvent: event!, forView: sender as! NSView)
+            NSMenu.popUpContextMenu(menu, withEvent: event, forView: sender as! NSView)
         }
     }
     
@@ -111,12 +111,13 @@ class JBContentViewController: NSViewController {
     
     func commitHash(text: String) {
     
-        if count(text.utf16) == 0 {
+        if text.utf16.count == 0 {
             outputTextField.stringValue = ""
             return
         }
    
         outputTextField.stringValue = hashedString(text)
+        print(outputTextField.stringValue)
     }
     
     var selectedHash = kHashType.MD5
@@ -148,7 +149,7 @@ class JBContentViewController: NSViewController {
             }
             
             if let unwrappedHash = hashData {
-                return unwrappedHash.hexString
+                return unwrappedHash.toHexString()
             }
             else {
                 return ""
