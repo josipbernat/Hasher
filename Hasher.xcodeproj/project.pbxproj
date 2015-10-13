@@ -18,6 +18,21 @@
 		BE9F1FF81B6118A00071FC51 /* JBLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FF41B6118A00071FC51 /* JBLayoutController.swift */; };
 		BE9F1FFA1B6118BD0071FC51 /* JBDummyControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FF91B6118BD0071FC51 /* JBDummyControll.swift */; };
 		BE9F1FFD1B612DCA0071FC51 /* JBTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FFC1B612DCA0071FC51 /* JBTextView.swift */; };
+		BEAB3CD71BCCF9DF0062125D /* JBDatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3CD61BCCF9DF0062125D /* JBDatabaseController.swift */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D021BCD40DE0062125D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3CF31BCD40DE0062125D /* FMDatabase.m */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D031BCD40DE0062125D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3CF51BCD40DE0062125D /* FMDatabaseAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D041BCD40DE0062125D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3CF71BCD40DE0062125D /* FMDatabasePool.m */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D051BCD40DE0062125D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3CF91BCD40DE0062125D /* FMDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D061BCD40DE0062125D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3CFC1BCD40DE0062125D /* FMResultSet.m */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D081BCD410B0062125D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAB3D071BCD410B0062125D /* libsqlite3.tbd */; };
+		BEAB3D091BCD4AAD0062125D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3CF31BCD40DE0062125D /* FMDatabase.m */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D0A1BCD4AB50062125D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3CF51BCD40DE0062125D /* FMDatabaseAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D0B1BCD4AB50062125D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3CF71BCD40DE0062125D /* FMDatabasePool.m */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D0D1BCD4AB50062125D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3CFC1BCD40DE0062125D /* FMResultSet.m */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D131BCD4AEC0062125D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3CF91BCD40DE0062125D /* FMDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D241BCD4B1D0062125D /* FMDatabaseAdditionsVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3D1F1BCD4B1D0062125D /* FMDatabaseAdditionsVariadic.swift */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D251BCD4B1D0062125D /* FMDatabaseVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB3D201BCD4B1D0062125D /* FMDatabaseVariadic.swift */; settings = {ASSET_TAGS = (); }; };
+		BEAB3D281BCD4B7A0062125D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAB3D071BCD410B0062125D /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +77,23 @@
 		BE9F1FF41B6118A00071FC51 /* JBLayoutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBLayoutController.swift; sourceTree = "<group>"; };
 		BE9F1FF91B6118BD0071FC51 /* JBDummyControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDummyControll.swift; sourceTree = "<group>"; };
 		BE9F1FFC1B612DCA0071FC51 /* JBTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBTextView.swift; sourceTree = "<group>"; };
+		BEAB3CD61BCCF9DF0062125D /* JBDatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatabaseController.swift; sourceTree = "<group>"; };
+		BEAB3CD91BCCFA130062125D /* Hasher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hasher-Bridging-Header.h"; sourceTree = "<group>"; };
+		BEAB3CDA1BCCFA130062125D /* HasherTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HasherTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		BEAB3CF21BCD40DE0062125D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		BEAB3CF31BCD40DE0062125D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		BEAB3CF41BCD40DE0062125D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		BEAB3CF51BCD40DE0062125D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		BEAB3CF61BCD40DE0062125D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		BEAB3CF71BCD40DE0062125D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		BEAB3CF81BCD40DE0062125D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		BEAB3CF91BCD40DE0062125D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		BEAB3CFA1BCD40DE0062125D /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		BEAB3CFB1BCD40DE0062125D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		BEAB3CFC1BCD40DE0062125D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		BEAB3D071BCD410B0062125D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BEAB3D1F1BCD4B1D0062125D /* FMDatabaseAdditionsVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseAdditionsVariadic.swift; sourceTree = "<group>"; };
+		BEAB3D201BCD4B1D0062125D /* FMDatabaseVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseVariadic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEAB3D081BCD410B0062125D /* libsqlite3.tbd in Frameworks */,
 				120458D4FE6CDB0DFE220D0C /* Pods_Hasher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEAB3D281BCD4B7A0062125D /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +129,7 @@
 		A763D0F6F458FAC053EE3D33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEAB3D071BCD410B0062125D /* libsqlite3.tbd */,
 				A7EEB81D2E2BC8777B41024B /* Pods_Hasher.framework */,
 			);
 			name = Frameworks;
@@ -123,6 +158,7 @@
 		BE9F1FC11B610F720071FC51 /* Hasher */ = {
 			isa = PBXGroup;
 			children = (
+				BEAB3CE31BCD40DE0062125D /* External */,
 				BE1E7DFF1B98647700CBDF51 /* Hasher.entitlements */,
 				BE9F1FFB1B612DBA0071FC51 /* View */,
 				BE9F1FF01B6118A00071FC51 /* Controller */,
@@ -130,6 +166,8 @@
 				BE9F1FC41B610F720071FC51 /* JBAppDelegate.swift */,
 				BE9F1FC61B610F720071FC51 /* Images.xcassets */,
 				BE9F1FC21B610F720071FC51 /* Supporting Files */,
+				BEAB3CD91BCCFA130062125D /* Hasher-Bridging-Header.h */,
+				BEAB3CDA1BCCFA130062125D /* HasherTests-Bridging-Header.h */,
 			);
 			path = Hasher;
 			sourceTree = "<group>";
@@ -165,6 +203,7 @@
 			children = (
 				BE9F1FF11B6118A00071FC51 /* ContentViewController */,
 				BE9F1FF41B6118A00071FC51 /* JBLayoutController.swift */,
+				BEAB3CD61BCCF9DF0062125D /* JBDatabaseController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +231,50 @@
 				BE9F1FFC1B612DCA0071FC51 /* JBTextView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BEAB3CE31BCD40DE0062125D /* External */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB3CE41BCD40DE0062125D /* fmdb */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		BEAB3CE41BCD40DE0062125D /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB3D141BCD4B1D0062125D /* extra */,
+				BEAB3CF21BCD40DE0062125D /* FMDatabase.h */,
+				BEAB3CF31BCD40DE0062125D /* FMDatabase.m */,
+				BEAB3CF41BCD40DE0062125D /* FMDatabaseAdditions.h */,
+				BEAB3CF51BCD40DE0062125D /* FMDatabaseAdditions.m */,
+				BEAB3CF61BCD40DE0062125D /* FMDatabasePool.h */,
+				BEAB3CF71BCD40DE0062125D /* FMDatabasePool.m */,
+				BEAB3CF81BCD40DE0062125D /* FMDatabaseQueue.h */,
+				BEAB3CF91BCD40DE0062125D /* FMDatabaseQueue.m */,
+				BEAB3CFA1BCD40DE0062125D /* FMDB.h */,
+				BEAB3CFB1BCD40DE0062125D /* FMResultSet.h */,
+				BEAB3CFC1BCD40DE0062125D /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		BEAB3D141BCD4B1D0062125D /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB3D1E1BCD4B1D0062125D /* Swift extensions */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		BEAB3D1E1BCD4B1D0062125D /* Swift extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB3D1F1BCD4B1D0062125D /* FMDatabaseAdditionsVariadic.swift */,
+				BEAB3D201BCD4B1D0062125D /* FMDatabaseVariadic.swift */,
+			);
+			path = "Swift extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,8 +439,16 @@
 			files = (
 				BE9F1FF61B6118A00071FC51 /* JBContentViewController.swift in Sources */,
 				BE9F1FFA1B6118BD0071FC51 /* JBDummyControll.swift in Sources */,
+				BEAB3D021BCD40DE0062125D /* FMDatabase.m in Sources */,
+				BEAB3D051BCD40DE0062125D /* FMDatabaseQueue.m in Sources */,
+				BEAB3D061BCD40DE0062125D /* FMResultSet.m in Sources */,
+				BEAB3D241BCD4B1D0062125D /* FMDatabaseAdditionsVariadic.swift in Sources */,
+				BEAB3CD71BCCF9DF0062125D /* JBDatabaseController.swift in Sources */,
 				BE9F1FC51B610F720071FC51 /* JBAppDelegate.swift in Sources */,
+				BEAB3D031BCD40DE0062125D /* FMDatabaseAdditions.m in Sources */,
 				BE9F1FFD1B612DCA0071FC51 /* JBTextView.swift in Sources */,
+				BEAB3D041BCD40DE0062125D /* FMDatabasePool.m in Sources */,
+				BEAB3D251BCD4B1D0062125D /* FMDatabaseVariadic.swift in Sources */,
 				BE9F1FF81B6118A00071FC51 /* JBLayoutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +457,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEAB3D091BCD4AAD0062125D /* FMDatabase.m in Sources */,
+				BEAB3D131BCD4AEC0062125D /* FMDatabaseQueue.m in Sources */,
+				BEAB3D0D1BCD4AB50062125D /* FMResultSet.m in Sources */,
+				BEAB3D0B1BCD4AB50062125D /* FMDatabasePool.m in Sources */,
 				BE9F1FD61B610F720071FC51 /* HasherTests.swift in Sources */,
+				BEAB3D0A1BCD4AB50062125D /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,15 +563,18 @@
 			baseConfigurationReference = 0F18E4C281C78521F71EA445 /* Pods-Hasher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Hasher/Hasher.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = Hasher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josip-bernat.hasher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hasher/Hasher-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -484,14 +583,17 @@
 			baseConfigurationReference = 0BA1E9BF5FF33E97CC78ACA4 /* Pods-Hasher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Hasher/Hasher.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = Hasher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josip-bernat.hasher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hasher/Hasher-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
@@ -500,6 +602,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -513,6 +616,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josipbernat.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hasher/HasherTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hasher.app/Contents/MacOS/Hasher";
 			};
 			name = Debug;
@@ -521,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -530,6 +636,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josipbernat.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hasher/HasherTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hasher.app/Contents/MacOS/Hasher";
 			};
 			name = Release;

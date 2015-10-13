@@ -117,6 +117,8 @@ class JBContentViewController: NSViewController {
         }
    
         outputTextField.stringValue = hashedString(text)
+        
+        JBDatabaseController.sharedInstance.saveToDatabse(text, type: selectedHash.rawValue)
     }
     
     var selectedHash = kHashType.MD5

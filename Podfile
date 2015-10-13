@@ -5,4 +5,5 @@ use_frameworks!
 
 target :Hasher do
     pod 'CryptoSwift', '~> 0.0'
+    
 end
