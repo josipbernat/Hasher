@@ -22,7 +22,7 @@ class JBLayoutController: NSObject {
         popover = NSPopover()
         let controller = JBContentViewController(nibName: "JBContentViewController", bundle: nil)
         popover.contentViewController = controller
-        statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(24)
+        statusItem = NSStatusBar.system.statusItem(withLength: 24)
         
         super.init()
         setupStatusButton()
@@ -35,20 +35,20 @@ class JBLayoutController: NSObject {
         if let statusButton = statusItem.button {
             
             statusButton.image = NSImage(named: "Status")
-            statusButton.image?.template = true
+            statusButton.image?.isTemplate = true
             
             // DummyControl interferes mouseDown events to keep statusButton highlighted while popover is open.
             let dummyControl = JBDummyControll()
             dummyControl.frame = statusButton.bounds
             statusButton.addSubview(dummyControl)
             statusButton.superview!.subviews = [statusButton, dummyControl]
-            dummyControl.action = "onPress:"
+            dummyControl.action = #selector(JBLayoutController.onPress(_:))
             dummyControl.target = self
         }
     }
     
-    func onPress(sender: AnyObject) {
-        if popover.shown == false {
+    @objc func onPress(_ sender: AnyObject) {
+        if popover.isShown == false {
             openPopover()
         }
         else {
@@ -63,10 +63,10 @@ class JBLayoutController: NSObject {
         if let statusButton = statusItem.button {
             
             statusButton.highlight(true)
-            popover.showRelativeToRect(NSZeroRect, ofView: statusButton, preferredEdge: NSRectEdge.MinY)
-            popoverMonitor = NSEvent.addGlobalMonitorForEventsMatchingMask(.LeftMouseDownMask, handler: { (event: NSEvent) -> Void in
+            popover.show(relativeTo: NSZeroRect, of: statusButton, preferredEdge: NSRectEdge.minY)
+            popoverMonitor = NSEvent.addGlobalMonitorForEvents(matching: .leftMouseDown, handler: { (event: NSEvent) -> Void in
                 self.closePopover()
-            })
+            }) as AnyObject
         }
     }
     

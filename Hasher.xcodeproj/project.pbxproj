@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		120458D4FE6CDB0DFE220D0C /* Pods_Hasher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EEB81D2E2BC8777B41024B /* Pods_Hasher.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		BE1E7E011B98649300CBDF51 /* Pods_Hasher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7EEB81D2E2BC8777B41024B /* Pods_Hasher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0972A6F94A02FDFD2013FC0D /* Pods_Hasher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E87420592E9F618B8EF9E54 /* Pods_Hasher.framework */; };
+		BE1E7E011B98649300CBDF51 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE9F1FC51B610F720071FC51 /* JBAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FC41B610F720071FC51 /* JBAppDelegate.swift */; };
 		BE9F1FC71B610F720071FC51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F1FC61B610F720071FC51 /* Images.xcassets */; };
 		BE9F1FD61B610F720071FC51 /* HasherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F1FD51B610F720071FC51 /* HasherTests.swift */; };
@@ -37,7 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BE1E7E011B98649300CBDF51 /* Pods_Hasher.framework in Embed Frameworks */,
+				BE1E7E011B98649300CBDF51 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,9 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0BA1E9BF5FF33E97CC78ACA4 /* Pods-Hasher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hasher.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hasher/Pods-Hasher.release.xcconfig"; sourceTree = "<group>"; };
-		0F18E4C281C78521F71EA445 /* Pods-Hasher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hasher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hasher/Pods-Hasher.debug.xcconfig"; sourceTree = "<group>"; };
-		A7EEB81D2E2BC8777B41024B /* Pods_Hasher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hasher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42121EAA7D0DADB6496DDDA3 /* Pods-Hasher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hasher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hasher/Pods-Hasher.debug.xcconfig"; sourceTree = "<group>"; };
+		6E87420592E9F618B8EF9E54 /* Pods_Hasher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hasher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DB6798C44C3CD78C492DA2 /* Pods-Hasher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hasher.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hasher/Pods-Hasher.release.xcconfig"; sourceTree = "<group>"; };
 		BE1E7DFF1B98647700CBDF51 /* Hasher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Hasher.entitlements; sourceTree = "<group>"; };
 		BE9F1FBF1B610F720071FC51 /* Hasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9F1FC31B610F720071FC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				120458D4FE6CDB0DFE220D0C /* Pods_Hasher.framework in Frameworks */,
+				0972A6F94A02FDFD2013FC0D /* Pods_Hasher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,19 +83,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D2BBDCB00415258E1E68041 /* Pods */ = {
+		AB2810A752E429A46FDD5E80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0F18E4C281C78521F71EA445 /* Pods-Hasher.debug.xcconfig */,
-				0BA1E9BF5FF33E97CC78ACA4 /* Pods-Hasher.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A763D0F6F458FAC053EE3D33 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A7EEB81D2E2BC8777B41024B /* Pods_Hasher.framework */,
+				6E87420592E9F618B8EF9E54 /* Pods_Hasher.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,8 +97,8 @@
 				BE9F1FC11B610F720071FC51 /* Hasher */,
 				BE9F1FD21B610F720071FC51 /* HasherTests */,
 				BE9F1FC01B610F720071FC51 /* Products */,
-				2D2BBDCB00415258E1E68041 /* Pods */,
-				A763D0F6F458FAC053EE3D33 /* Frameworks */,
+				C10FD5175B9AEBE98C22FF4F /* Pods */,
+				AB2810A752E429A46FDD5E80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +185,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C10FD5175B9AEBE98C22FF4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42121EAA7D0DADB6496DDDA3 /* Pods-Hasher.debug.xcconfig */,
+				A7DB6798C44C3CD78C492DA2 /* Pods-Hasher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,13 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE9F1FD91B610F720071FC51 /* Build configuration list for PBXNativeTarget "Hasher" */;
 			buildPhases = (
-				145655AC234039AD9E662ED8 /* Check Pods Manifest.lock */,
+				5EC13AAE7EF24EA0B48D7571 /* [CP] Check Pods Manifest.lock */,
 				BE9F1FBB1B610F720071FC51 /* Sources */,
 				BE9F1FBC1B610F720071FC51 /* Frameworks */,
 				BE9F1FBD1B610F720071FC51 /* Resources */,
-				37CE13C8856EDDDD48ABA55E /* Embed Pods Frameworks */,
-				733CF19336FA5220305ED9FF /* Copy Pods Resources */,
 				BE1E7E021B98649300CBDF51 /* Embed Frameworks */,
+				3F445BC242E0A155B7EB8870 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,12 +243,13 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Josip Bernat";
 				TargetAttributes = {
 					BE9F1FBE1B610F720071FC51 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 2TNEL949ZZ;
+						LastSwiftMigration = 1010;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -258,6 +258,7 @@
 					};
 					BE9F1FCE1B610F720071FC51 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 1010;
 						TestTargetID = BE9F1FBE1B610F720071FC51;
 					};
 				};
@@ -302,49 +303,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		145655AC234039AD9E662ED8 /* Check Pods Manifest.lock */ = {
+		3F445BC242E0A155B7EB8870 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hasher/Pods-Hasher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hasher/Pods-Hasher-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		37CE13C8856EDDDD48ABA55E /* Embed Pods Frameworks */ = {
+		5EC13AAE7EF24EA0B48D7571 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hasher-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hasher/Pods-Hasher-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		733CF19336FA5220305ED9FF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hasher/Pods-Hasher-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -389,13 +381,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -423,6 +425,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -434,13 +437,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -459,40 +472,48 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		BE9F1FDA1B610F720071FC51 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F18E4C281C78521F71EA445 /* Pods-Hasher.debug.xcconfig */;
+			baseConfigurationReference = 42121EAA7D0DADB6496DDDA3 /* Pods-Hasher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hasher/Hasher.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2TNEL949ZZ;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				INFOPLIST_FILE = Hasher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josip-bernat.hasher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		BE9F1FDB1B610F720071FC51 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BA1E9BF5FF33E97CC78ACA4 /* Pods-Hasher.release.xcconfig */;
+			baseConfigurationReference = A7DB6798C44C3CD78C492DA2 /* Pods-Hasher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hasher/Hasher.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2TNEL949ZZ;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				INFOPLIST_FILE = Hasher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josip-bernat.hasher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -513,6 +534,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josipbernat.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hasher.app/Contents/MacOS/Hasher";
 			};
 			name = Debug;
@@ -530,6 +553,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josipbernat.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hasher.app/Contents/MacOS/Hasher";
 			};
 			name = Release;

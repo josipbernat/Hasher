@@ -57,25 +57,26 @@ class JBContentViewController: NSViewController {
         
         comboBox.removeAllItems()
         for value in kHashType.allValues {
-            comboBox.addItemWithObjectValue(value.rawValue)
+            comboBox.addItem(withObjectValue: value.rawValue)
         }
-        comboBox.selectItemAtIndex(0)
+        comboBox.selectItem(at: 0)
         
         toogleResultLabelText()
         outputTextField.stringValue = ""
         
-        disclosureButton.state = 1
+        disclosureButton.state = convertToNSControlStateValue(1)
     }
     
     //MARK: - ComboBox
     
-    @IBAction func comboBoxSelected(sender: AnyObject) {
+    @IBAction func comboBoxSelected(_ sender: AnyObject) {
         
         selectedHash = kHashType.allValues[comboBox.indexOfSelectedItem]
         
         toogleResultLabelText()
-        if let text = textView.string {
-            commitHash(text)
+
+        if textView.string.lengthOfBytes(using: String.Encoding.utf8) > 0 {
+            commitHash(textView.string)
         }
         else {
             commitHash("")
@@ -88,28 +89,28 @@ class JBContentViewController: NSViewController {
     
     //MARK: - Button Selectors
     
-    @IBAction func onDisclosure(sender: AnyObject) {
+    @IBAction func onDisclosure(_ sender: AnyObject) {
     
         let menu = NSMenu(title: "")
-        menu.insertItemWithTitle("About", action: "onAbout:", keyEquivalent: "", atIndex: 0)
-        menu.insertItemWithTitle("Quit", action: "onQuit:", keyEquivalent: "", atIndex: 1)
+        menu.insertItem(withTitle: "About", action: #selector(JBContentViewController.onAbout(_:)), keyEquivalent: "", at: 0)
+        menu.insertItem(withTitle: "Quit", action: #selector(JBContentViewController.onQuit(_:)), keyEquivalent: "", at: 1)
         
         if let event = NSApp.currentEvent {
-            NSMenu.popUpContextMenu(menu, withEvent: event, forView: sender as! NSView)
+            NSMenu.popUpContextMenu(menu, with: event, for: sender as! NSView)
         }
     }
     
-    func onAbout(sender: AnyObject) {
-        NSApplication.sharedApplication().orderFrontStandardAboutPanel(self)
+    @objc func onAbout(_ sender: AnyObject) {
+        NSApplication.shared.orderFrontStandardAboutPanel(self)
     }
     
-    func onQuit(sender: AnyObject) {
-        NSApplication.sharedApplication().terminate(self)
+    @objc func onQuit(_ sender: AnyObject) {
+        NSApplication.shared.terminate(self)
     }
     
     //MARK: - Hashing
     
-    func commitHash(text: String) {
+    func commitHash(_ text: String) {
     
         if text.utf16.count == 0 {
             outputTextField.stringValue = ""
@@ -120,11 +121,11 @@ class JBContentViewController: NSViewController {
     }
     
     var selectedHash = kHashType.MD5
-    func hashedString(string: String) -> String {
+    func hashedString(_ string: String) -> String {
     
-        if let data = (string as NSString).dataUsingEncoding(NSUTF8StringEncoding) {
+        if let data = (string as NSString).data(using: String.Encoding.utf8.rawValue) {
         
-            var hashData: NSData?
+            var hashData: Data?
             
             switch selectedHash {
                 
@@ -158,4 +159,9 @@ class JBContentViewController: NSViewController {
             return ""
         }
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToNSControlStateValue(_ input: Int) -> NSControl.StateValue {
+	return NSControl.StateValue(rawValue: input)
 }

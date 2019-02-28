@@ -10,8 +10,8 @@ import Cocoa
 
 class JBDummyControll: NSControl {
 
-    override func mouseDown(theEvent: NSEvent) {
-        superview!.mouseDown(theEvent)
+    override func mouseDown(with theEvent: NSEvent) {
+        superview!.mouseDown(with: theEvent)
         sendAction(action, to: target)
     }
 }
